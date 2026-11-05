@@ -1,0 +1,23 @@
+{
+  "name": "mtech-attachment-quiz-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright and TypeScript portfolio automation for the MTech attachment-style quiz",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report quiz-playwright-report",
+    "test:quiz": "playwright test",
+    "test:quiz:chromium": "playwright test --project=chromium",
+    "test:quiz:headed": "playwright test --headed",
+    "test:quiz:ui": "playwright test --ui",
+    "report:quiz": "playwright show-report quiz-playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

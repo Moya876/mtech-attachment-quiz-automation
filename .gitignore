@@ -1,0 +1,7 @@
+node_modules/
+quiz-playwright-report/
+quiz-test-results/
+blob-report/
+.env
+.env.*
+!.env.example
