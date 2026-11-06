@@ -44,25 +44,3 @@ On Linux, use `npx playwright install --with-deps` to install browser system dep
 
 See [detailed coverage, scoring references, and limitations](docs/attachment-quiz.md). These tests validate software behavior, not psychological validity, complete accessibility, or unrestricted network privacy. Mobile coverage is emulated; WebKit is not the Safari application.
 
-## Reports and CI
-
-HTML reports are generated in `quiz-playwright-report/`, with failure artifacts in `quiz-test-results/`. Both are ignored by Git. The Desktop copy includes the original successful HTML report for immediate viewing with `npm run report`.
-
-GitHub Actions runs all four profiles on pushes and pull requests to `main`, and can be started manually. Download the `playwright-report-attachment-quiz` artifact from a workflow run to inspect that run's report.
-
-## Portfolio description
-
-> Built a Playwright and TypeScript automation suite for a 24-question attachment-style quiz, covering randomized question flows, reverse-scored results, browser persistence, age and consent validation, score sharing, PNG exports, and keyboard interactions across four browser profiles. Added isolated HTML reports, screenshots, failure traces, and GitHub Actions.
-
-## Keep the Desktop project in sync
-
-Run `git pull --ff-only` before editing. After reviewing changes:
-
-```sh
-git status
-git add tests docs README.md playwright.config.ts package.json package-lock.json tsconfig.json .gitignore .github
-git commit -m "Describe your changes"
-git push
-```
-
-Source sync happens through Git. Reports remain local or in GitHub Actions artifacts. To publish a report separately, upload its complete folder, including the data directory.
